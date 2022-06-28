@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        form{
+            width: 700px;
+            margin: auto;
+        }
+
+        .cover{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            padding: 15px;
+           justify-content: space-around;
+        }
+
+        button{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Make Your Dolphin Cove Reservations Here</h1>
+
+    <form action="/dolphinCove/reservation/add" method="post">
+        <div class="cover">
+            <span>
+                <label for="firstName">First Name</label>
+                <input type="text" name="fname" required>
+            </span>
+            <span>
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lname" required>
+            </span>
+            <span>
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dateOfBirth" required>
+            </span>
+        </div>
+        <div  class="cover">
+            <span>
+                <label for="">Hotel Occupied</label>
+                <select name="hotels" id="hotels">
+                    <option value="1">Pegasus Hotel</option>
+                    <option value="2">Moon Palace Hotel</option>
+                    <option value="3">Spanish Court Hotel</option>
+                    <option value="4">Jewel Grande Hotel</option>
+                </select>
+            </span>
+            <span>
+                <label for="">Tour Company Charted</label>
+                <select name="tourCompanies" id="tourCompanies">
+                    <option value="1">Knutsford Express</option>
+                    <option value="2">JUTA Tours</option>
+                </select>
+            </span>
+            <span>
+                <label for="paymentType">Type of Payment</label>
+                <select name="paymentTypes" id="paymentTypes">
+                    <option value="1">Cash</option>
+                    <option value="2">Credit Card</option>
+                    <option value="3">Debit Card</option>
+                </select>
+            </span>
+            <span>
+                <label for="programChosen">Program Selected</label>
+        <select name="programChosen" id="programChosen">
+            <option value="1">Jungle Trail</option>
+            <option value="4">Dolphin Royal Swim</option>
+            <option value="5">Dolphin Encounter</option>
+            <option value="6">Palace Dolphin Swim</option>
+        </select>
+            </span>
+        </div>
+        <div class="cover">
+           <span>
+            <label for="checkin">Check In</label>
+            <input type="datetime-local" name="checkIn">
+           </span>
+           <span>
+            <label for="checkout">Check Out</label>
+            <input type="datetime-local" name="checkOut">
+           </span>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

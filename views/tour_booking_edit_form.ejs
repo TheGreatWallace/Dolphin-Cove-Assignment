@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        form{
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .flex{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tour Bookings</h1>
+    <form action="/update" method="post">
+       <div class="flex">
+        <span>
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" value="<%= booking.fname %> ">
+        </span>
+        <span>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" value="<%= booking.lname %>">
+        </span>
+       </div>
+       <br><br>
+       <div class="flex">
+        <span>
+            <label for="pickup_time">Pickup Time</label>
+            <input type="time" name="pickup" value="<%= booking.pick_up %>">
+        </span>
+        <span>
+            <label for="tourCompany">Tour Company</label>
+            <select name="tour_companies" id="tour_companies" value="<%= booking.tour_company %>">
+                <option value="1">Knutsford Express</option>
+                <option value="3">JUTA Tours</option>
+            </select>
+        </span>
+       </div>
+       <br><br>
+       <div class="flex">
+        <span>
+            <label for="address">Address</label>
+            <input type="textarea" cols="20" rows="4" name="address" value="<%= booking.address %>">
+        </span>
+        <span>
+            <label for="telephone">Contact</label>
+            <input type="tel" name="contact" value="<%= booking.phone_number %>">
+        </span>
+       </div>
+       <br><br>
+       <button type="submit" style="padding: 10px;">Submit</button>
+    </form>
+</body>
+</html>

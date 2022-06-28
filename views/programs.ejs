@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><%= title %> </h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Cost</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% programs.forEach(program => { %>
+            <tr>
+                <td><%= program.namee %> </td>
+                <td><%= program.cost %> </td>
+                <td><%= program.description %> </td>
+                <td>
+                    <button><a href="/programs/edit/<%= program.id %> ">Edit</a></button>
+                    <button><a href="/programs/delete/<%= program.id %> ">Delete</a></button>
+                </td>
+            </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</body>
+</html>

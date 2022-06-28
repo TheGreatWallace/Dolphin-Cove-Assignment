@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.mainContainer{
+    width: 100%;
+}
+
+.firstHeaderImage{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.firstHeaderImage img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.overlay{
+    width: 100%;
+    height: 400px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.50;
+}
+
+.overlayText{
+    font-size: 20px;
+    width: 50%;
+    color: whitesmoke;
+    margin: 5px;
+}
+
+.overlayText button{
+    width:  150px;
+    height: auto;
+    color: white;
+    background-color: rgb(43, 191, 43);
+    border-radius: 10px;
+    border: none;
+}
+
+.overlayText a{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.secondSection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.imageSection{
+    width: 50%;
+}
+
+.imageSection img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.infoSection{
+    width: 50%;
+    padding: 10px;
+    font-size: 25px;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.infoSection hr{
+    width: 120px;
+    height: 5px;
+    background-color: #0f4fc5;
+}
+
+.thirdSection{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.thirdSection img{
+    width: 100%;
+    height: 400px;
+}
+
+.ammenities{
+    position: absolute;
+    width: 30%;
+    height: 470px;
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,#00d2ff, #3a7bd5 );  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #00d2ff, #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    bottom: 0;
+    right:0;
+    margin-bottom: -35px;
+    margin-right: 60px;
+}
+
+.ammenities2{
+    position: absolute;
+    width: 30%;
+    height: 470px;
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,#3a7bd5, #00d2ff );  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    bottom: 0;
+    left:0;
+    margin-bottom: -35px;
+    margin-left: 60px;
+}
+
+.programOptions{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+}
+
+.paymentMethods{
+    width: 100%;
+    height: 300px;
+    align-content: center;
+    position: relative;
+    justify-content: center;
+}
+
+.payments{
+    margin-top: 70px;
+    margin-left: 40px;
+}
+
+.programs{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.card{
+    width: 30%;
+    padding: 7px;
+    justify-items: center;
+}
+
+.card img{
+    width: 95%;
+}
+
+.six{
+    margin-top: 14px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome To The Tour Page</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tour Company</th>
+                <th>Voucher Number</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% companies.forEach(company => { %>
+            <tr>
+                <td><%= company.name %> </td>
+                <td><%= company.voucher_number %> </td>
+                <td>
+                    <button><a href="tourPage/edit/<%= company.id %> ">Edit</a></button>
+                    <button><a href="tourPage/delete/<%= company.id %>">Delete</a></button>
+                </td>
+            </tr>
+            <% }) %>
+        </tbody>
+    </table>
+
+
+    <h1>ADD A TOUR COMPANY HERE</h1>
+
+    <form method="post" action="/admin/TourPage/add">
+        <label for="Company Name">Company Name</label>
+        <input type="text" name="company">
+        <label for="voucher_number">Voucher Number</label>
+        <input type="text" name="voucher_number">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

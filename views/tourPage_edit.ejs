@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>EDIT A TOUR COMPANY DATA HERE</h1>
+    <form method="post" action="/admin/TourPage/update/<%= company.id %>">
+        <label for="Company Name">Company Name</label>
+        <input type="text" name="company" value="<%= company.name %> ">
+        <label for="voucher_number">Voucher Number</label>
+        <input type="text" name="voucher_number" value="<%= company.voucher_number %> ">
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

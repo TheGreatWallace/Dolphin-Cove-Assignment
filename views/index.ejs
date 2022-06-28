@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <style>
+      *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+  width: 100%;
+  height: auto;
+  background-color: #3aa6f4;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 25px;
+  padding: 7px;
+  list-style: none;
+}
+
+.fblock{
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.sblock{
+  width: 40%;
+  justify-content: center;
+}
+
+nav a{
+  color: white;
+}
+
+.mainContainer{
+    width: 100%;
+}
+
+.firstHeaderImage{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.firstHeaderImage img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.overlay{
+    width: 100%;
+    height: 400px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.50;
+}
+
+.overlayText{
+    font-size: 20px;
+    width: 50%;
+    color: whitesmoke;
+    margin: 5px;
+}
+
+.overlayText button{
+    width:  150px;
+    height: auto;
+    color: white;
+    background-color: rgb(43, 191, 43);
+    border-radius: 10px;
+    border: none;
+}
+
+.overlayText a{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.secondSection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.imageSection{
+    width: 50%;
+}
+
+.imageSection img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.infoSection{
+    width: 50%;
+    padding: 10px;
+    font-size: 25px;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.infoSection hr{
+    width: 120px;
+    height: 5px;
+    background-color: #0f4fc5;
+}
+
+.thirdSection{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.thirdSection img{
+    width: 100%;
+    height: 400px;
+}
+
+.ammenities{
+    position: absolute;
+    width: 30%;
+    height: 470px;
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,#00d2ff, #3a7bd5 );  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #00d2ff, #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    bottom: 0;
+    right:0;
+    margin-bottom: -35px;
+    margin-right: 60px;
+}
+
+.ammenities2{
+    position: absolute;
+    width: 30%;
+    height: 470px;
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,#3a7bd5, #00d2ff );  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    bottom: 0;
+    left:0;
+    margin-bottom: -35px;
+    margin-left: 60px;
+}
+
+.programOptions{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+}
+
+.paymentMethods{
+    width: 100%;
+    height: 300px;
+    align-content: center;
+    position: relative;
+    justify-content: center;
+}
+
+.payments{
+    margin-top: 70px;
+    margin-left: 40px;
+}
+
+.programs{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.card{
+    width: 30%;
+    padding: 7px;
+    justify-items: center;
+}
+
+.card img{
+    width: 95%;
+}
+
+.six{
+    margin-top: 14px;
+}
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="fblock">
+            <li><a href="/reservation/publicView">View Reservations</a></li>
+            <li><a href="">Programs</a></li>
+        </div>
+        <div>
+          <li><a href="/login">Admin Login</a></li>
+        </div>
+      </nav>
+      <div class="mainContainer">
+        <section class="one">
+          <div class="firstHeaderImage">
+            <img
+              src="https://www.dolphincoveja.com/Content/src/programs/or/yaaman-dolphincove-banner.jpg"
+            />
+            <div class="overlay">
+              <div class="overlayText">
+                <h1>Dolphin Cove Jamaica</h1>
+                <p>
+                  Come have the experience of lifetime, visit us at any of our
+                  three locations where we provide a number of different
+                  programs to choose from. You can choose to go on an adventure
+                  with the dolphins or an epic journey with our stingrays among
+                  many other exciting activities.
+                </p>
+                <button style="padding: 12px; background-color:rgb(43, 191, 43);"><a href="/reservation/form">Make Your Appointment Now</a></button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="Two">
+        <div class="secondSection">
+          <div class="imageSection">
+            <img
+              src="https://www.knutsfordexpress.com/media/1080/courier-web-advt-610_354.jpg"
+              alt="Knutsford image"
+            />
+          </div>
+          <div class="infoSection">
+            <hr />
+            <h3>Raising the level of Comfort</h3>
+            <h1>Welcome To Knutsford Express</h1>
+            <p>
+              We are a luxury passenger and courier transportation company
+              offering safe, reliable, comfortable, and cost-effective scheduled
+              services from convenient locations on Jamaica's north and south
+              coasts including connections to Portland, St. Mary, and Negril.
+            </p>
+            <button style="padding: 12px;"><a href="/tourBooking/form">Come Tour Today</a></button>
+          </div>
+        </div>
+      </section>
+      <section class="three">
+        <div class="thirdSection">
+          <img
+            src="https://www.dolphincoveja.com/Content/src/programs/ne/locacion-Dolphin-Cove-Negril.jpg"
+          />
+          <div class="ammenities">
+             <h1 style="text-align:center">Programs</h1>
+          <div class="programOptions">
+            <div class="firstColumn">
+              <h3>Dolphin Royal Swim</h3>
+              <h3>Dolphin Encounter</h3>
+              <h3>Palace Dolphin Swim</h3>
+            </div>
+            <div class="secondColumn">
+               <h3>Jungle Trail</h3>
+               <h3>Zip-line</h3>
+               <h3>Hiking</h3>
+            </div>
+            <div>
+              <img src="https://www.royalcaribbean.com/blog/wp-content/uploads/2020/02/RCI_ADVSQUAD_RiverJordan_Harmony_Haiti_DragonsBreath_Zipline_0209_EDITED.jpg" style="object-fit: contain;  ">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="four">
+        <div class="paymentMethods">
+          <center><h1>Payment Options</h1></center>
+          <img
+            class="payments"
+            src="https://www.dolphincoveja.com/Content/src/cards.png"
+          />
+        </div>
+      </section>
+      <section class="five">
+        <div class="thirdSection">
+          <img
+            src="https://www.dolphincoveja.com/Content/src/programs/pj/locations-moon-palace-jamaica-grande.jpg"
+          />
+          <div class="ammenities2">
+            <h1 style="text-align:center">Special Offers</h1>
+            <div class="programOptions">
+              <div class="firstColumn">
+                <h3>Flamingo Feeding</h3>
+                <h3>Paintball Blitz</h3>
+                <h3>Nature Walk</h3>
+              </div>
+              <div class="secondColumn">
+                 <h3>Swimming Pool</h3>
+                 <h3>Kiddies Corner</h3>
+                 <h3>Go Carting</h3>
+              </div>
+              <div>
+                <img src="https://3.bp.blogspot.com/-N2FrZi9LzQE/T0U7S4OoQrI/AAAAAAAACQY/fukjk6WlRXQ/s1600/MPOC1131_721.jpg" style="object-fit: contain;  ">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="six">
+        <center><h1>Activities</h1></center>
+        <div class="programs">
+          <% programs.forEach(program => { %>
+          <div class="card">
+            <img
+              src="<%= program.url %> "
+            />
+            <h3><%= program.name %> </h3>
+            <h2>Price: <%= program.cost %> </h2>
+            <p><%= program.description %> </p>
+          </div>
+          <% }) %>
+        </div>
+      </section>
+      <footer>
+
+      </footer>
+    </main>
+  </body>
+</html>

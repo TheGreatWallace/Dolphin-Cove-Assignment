@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        table{
+            padding: 10px;
+            border: 2px solid rgb(30, 30, 192);
+            margin: auto;
+        }
+
+        tr th{
+            padding: 4px 9px;
+            border: 2px solid rgb(61, 188, 204);
+        }
+
+        td{
+            padding: 12px;
+        }
+
+        h1{
+            text-align: center;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reservations</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Check In</th>
+                <th>Program Selected</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% reservations.forEach(reservation => { %>
+            <tr>
+                <td><%=reservation.frst_name  %> </td>
+                <td><%=reservation.last_name  %> </td>
+                <td><%=reservation.check_in  %> </td>
+                <td><%=reservation.Program_Name  %> </td>
+            </tr>
+            <% }) %>
+        </tbody>
+    </table>
+
+    <br><br>
+    <button style="padding: 15px;"><a href="/">Home</a></button>
+</body>
+</html>
