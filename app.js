@@ -1,6 +1,4 @@
 const express = require("express");
-const req = require("express/lib/request");
-const res = require("express/lib/response");
 const mysql = require("mysql");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -8,8 +6,6 @@ const expresslayouts = require("express-ejs-layouts")
 // const bycrpt = require('bcrypt')
 const sessions = require("express-session");
 const cookieParser = require("cookie-parser");
-const { text } = require("body-parser");
-const { route } = require("./routes/login");
 const app = express();
 var path = require("path");
 const adminRoute = require("./routes/admin");
@@ -40,8 +36,8 @@ app.use(
 
 
 app.set("view engine", "ejs");
-app.listen(8080, () => {
-  console.log("Server started at port 8080");
+app.listen(8000, () => {
+  console.log("Server started at port 8000");
   console.log("Database Connected");
 });
 
